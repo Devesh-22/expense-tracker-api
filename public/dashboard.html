@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Expense Tracker Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <div class="header-bar">
+    <div class="header-title">AtoZ Expense Tracker</div>
+    <div class="header-desc">Your budgeting partner, all in one dashboard. Visualize, manage, succeed!</div>
+  </div>
+  <div class="feature-banner">
+    💡 Real-time expense insights | 🔒 Secure cloud storage | 🏆 Personalized reports
+  </div>
+
+  <div class="container">
+    <h2>Expense Tracker Dashboard</h2>
+    <button id="logoutBtn">Logout</button>
+    <button id="profileBtn">Profile</button>
+
+
+    <form id="expenseForm">
+      <input type="hidden" id="expenseId" />
+      <input type="text" id="description" placeholder="Description" required />
+      <input type="number" id="amount" placeholder="Amount" required />
+      <input type="text" id="category" placeholder="Category" required />
+      <input type="date" id="date" />
+      <button type="submit">Add Expense</button>
+      <button type="button" id="cancelEdit" style="display:none;">Cancel</button>
+    </form>
+
+    <div id="message"></div>
+
+    <table id="expensesTable">
+      <thead>
+        <tr>
+          <th>Description</th><th>Amount</th><th>Category</th><th>Date</th><th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="dashboard.js"></script>
+  <script>document.getElementById('profileBtn').onclick = () => {
+    window.location.href = 'profile.html';
+  };
+  </script>
+</body>
+</html>

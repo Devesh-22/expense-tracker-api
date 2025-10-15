@@ -1,0 +1,212 @@
+body {
+  background: linear-gradient(115deg, #f4f9fc 62%, #bbecd4 100%);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.header-bar {
+  width: 100%;
+  padding: 32px 0 19px 0;
+  background: linear-gradient(90deg, #e5fced 60%, #43a047 100%);
+  text-align: center;
+  box-shadow: 0 3px 20px #43a04719;
+  border-bottom: 2px solid #43a047;
+}
+.header-title {
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: #234e31;
+  letter-spacing: 2px;
+}
+.header-desc {
+  color: #25593b;
+  font-size: 1.07rem;
+  letter-spacing: 0.5px;
+  margin-top: 9px;
+}
+
+.feature-banner {
+  max-width: 660px;
+  margin: 18px auto 28px auto;
+  background: linear-gradient(90deg, #b9f3cc 20%, #43a047 90%);
+  color: #174d1d;
+  border-radius: 14px;
+  font-size: 1.04rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 13px 18px;
+  box-shadow: 0 1px 9px #43a04729;
+  letter-spacing: 1px;
+}
+
+.container {
+  max-width: 930px;
+  margin: 46px auto 42px auto;
+  background: #fff;
+  padding: 38px 36px 34px 36px;
+  border-radius: 18px;
+  box-shadow: 0 8px 36px rgba(67,160,71,0.08), 0 2px 10px #228b22;
+  text-align: center;
+  border: 2px solid #bbecd4;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 26px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: 1.6px;
+  color: #254d2a;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(90deg, #43a047 18%, #bbecd4 98%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.form-btns {
+  display: flex;
+  justify-content: flex-end;
+  gap: 9px;
+  margin-bottom: 16px;
+}
+
+form {
+  margin-bottom: 26px;
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 13px;
+  background: #f4fcef;
+  padding: 19px;
+  border-radius: 12px;
+  box-shadow: 0 1px 6px #43a04714;
+}
+
+form input, form button {
+  padding: 14px 10px;
+  border-radius: 6px;
+  border: 1.3px solid #b9f3cc;
+  font-size: 17px;
+}
+
+form input {
+  flex: 1 1 165px;
+  background: #eafff3;
+  color: #186f3d;
+  font-weight: 500;
+  transition: border 0.2s;
+  outline: none;
+  margin-bottom: 0;
+}
+form input:focus {
+  border: 2px solid #43a047;
+  background: #fff;
+}
+
+form button {
+  background: linear-gradient(93deg, #43a047 60%, #bbecd4 100%);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: background 0.2s;
+  box-shadow: 0 2px 12px #bbecd499;
+}
+form button:hover {
+  background: linear-gradient(90deg, #bbecd4 60%, #43a047 100%);
+  color: #232b36;
+}
+
+#expensesTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2px;
+}
+
+#expensesTable th, #expensesTable td {
+  border: 1px solid #e1e1e1;
+  padding: 11px;
+  text-align: left;
+  font-size: 17px;
+}
+
+#expensesTable th {
+  background: linear-gradient(90deg,#43a047 45%, #bbecd4 99%);
+  color: white;
+  font-weight: 700;
+}
+
+#expensesTable tbody tr:nth-child(even) {
+  background: #f9fdfc;
+}
+#expensesTable td {
+  color: #225e36;
+}
+
+.action-btn {
+  cursor: pointer;
+  color: #f44336;
+  border: none;
+  background: none;
+  margin-right: 7px;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: color 0.2s;
+  padding: 3px 8px;
+  border-radius: 5px;
+}
+.action-btn:hover {
+  color: #fff;
+  background: #43a047;
+}
+
+#message {
+  text-align: center;
+  margin-bottom: 7px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #fa0036;
+}
+
+/* Buttons bar */
+button#logoutBtn, button#profileBtn {
+  margin: 8px 2px 14px 2px;
+  font-size: 1rem;
+  padding: 7px 14px;
+  border-radius: 6px;
+  border: none;
+  background: linear-gradient(95deg, #43a047 55%, #bbecd4 100%);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 12px #bbecd466;
+  transition: background 0.2s, color 0.2s;
+}
+button#logoutBtn:hover, button#profileBtn:hover {
+  background: linear-gradient(90deg, #bbecd4 60%, #43a047 100%);
+  color: #432b36;
+}
+
+/* Responsive for small screens */
+@media (max-width: 900px) {
+  .container {
+    max-width: 97vw;
+    padding: 18px 6vw;
+  }
+  .header-bar, .feature-banner {
+    padding: 11px 2vw;
+    min-width: 0;
+  }
+  form {
+    gap: 9px;
+    padding: 9px;
+  }
+  #expensesTable th, #expensesTable td {
+    font-size: 15px;
+    padding: 7px;
+  }
+}
