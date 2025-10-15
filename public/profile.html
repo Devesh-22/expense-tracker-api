@@ -159,6 +159,16 @@ form button:hover {
   .header-bar {
     padding: 18px 0 6px 0;
   }
+  nav {
+  margin: 1em 0;
+}
+nav a {
+  margin-right: 1.5em;
+  text-decoration: none;
+  color: #4CAF50;
+  font-weight: bold;
+}
+
 }
 
   </style>
@@ -173,6 +183,10 @@ form button:hover {
   </div>
 
   <div class="container">
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="login.html" onclick="logout()">Logout</a>
+    </nav>
     <h2>User Profile</h2>
 
     <form id="profileForm">
