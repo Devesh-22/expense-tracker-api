@@ -52,7 +52,7 @@ app.post('/login', async (req, res) => {
 
     res.json({ token });
   } catch (err) {
-    res.status(500).json({ error: "Internal server error." });
+    res.status(500).json({ error: err.message || "Internal server error." });
   }
 });
 
